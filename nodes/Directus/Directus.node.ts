@@ -2820,11 +2820,10 @@ export class Directus implements INodeType {
 				if (operation == "updateMultiple") {
 					try {
 						const collection = this.getNodeParameter("collection", i) as string;
-						const ID = this.getNodeParameter("id", i) as string;
 						const data = this.getNodeParameter("data", i) as object | string;
 
 						requestMethod = "PATCH";
-						endpoint = `items/${collection}/${ID}`;
+						endpoint = `items/${collection}`;
 
 						let response;
 						if (typeof data == "string") {
