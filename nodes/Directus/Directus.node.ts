@@ -105,7 +105,7 @@ import {
 
 export class Directus implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: "Directus",
+		displayName: "Directus (DrWade)",
 		name: "directus",
 		icon: "file:directus.svg",
 		group: ["transform"],
